@@ -1,41 +1,82 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
-h1{
-    margin:0;
-}
-
-.hero{
-    font-family: 'Inter', sans-serif;
-    background-image: url("./mainBG.png");
-    height: 100vh;
-    background-size: cover;
-    color: white; 
-    text-align: center;
+h1 {
+  margin: 0;
 }
 
-.hero-h1{
-    font-size: 60px;
-    font-weight: 600;
-    padding-top: 250px;
+.hero {
+  font-family: "Inter", sans-serif;
+  background-image: url("./mainBG.png");
+  height: 100vh;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 128px;
+  padding-right: 128px;
 }
 
-.hero-p{
-    font-size: 20px;
-    font-weight: 400;
-    padding-left: 350px;
-    padding-right: 350px;
+.hero-h1 {
+  font-size: 60px;
+  font-weight: 600;
 }
 
-.hero-btn{
-    padding-left: 28px;
-    padding-right: 28px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    font-size: 14px;
-    border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    color: #404258;
-    margin-top: 16px;
+.hero-p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.hero-btn {
+  padding-left: 28px;
+  padding-right: 28px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #404258;
+  margin-top: 16px;
+  display: block;
+}
+
+.navigation {
+  padding-left: 128px;
+  padding-right: 128px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter";
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: rgb(62, 66, 71);
+}
+
+.navigation-logo {
+  display: block;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 32px;
+}
+
+.navigation-sub-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 32px;
+}
+
+.navigation-menu-link {
+  color: white;
+  display: block;
+  text-decoration: none;
 }
