@@ -1,8 +1,7 @@
-body {
+* {
   margin: 0;
-}
-h1 {
-  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .hero {
@@ -22,6 +21,7 @@ h1 {
 .hero-h1 {
   font-size: 60px;
   font-weight: 600;
+  margin: 20px 0;
 }
 
 .hero-p {
@@ -55,6 +55,11 @@ h1 {
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: rgb(62, 66, 71);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .navigation-logo {
@@ -79,4 +84,96 @@ h1 {
   color: white;
   display: block;
   text-decoration: none;
+}
+
+.categories {
+  padding: 64px 128px;
+  font-family: "Inter";
+}
+
+.categories-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.categories-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.categories-link {
+  color: purple;
+  display: block;
+  text-decoration: none;
+}
+
+.categories-cards {
+  display: flex;
+  padding: 16px 0;
+  justify-content: space-between;
+}
+
+.categories-card {
+  width: 200px;
+  position: relative;
+  z-index: 1;
+}
+
+.categories-card p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  right: 0;
+}
+
+.categories-card img {
+  display: block;
+  max-width: 100%;
+  border-radius: 16px;
+}
+
+.collections {
+  padding: 64px 128px;
+  font-family: "Inter";
+}
+
+.collections-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.collections-header p {
+  margin-top: 16px;
+  color: gray;
+}
+
+.collection-cards {
+  display: flex;
+  margin-top: 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collection-card {
+  width: 384px;
+}
+
+.collection-card img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: 384px;
+}
+
+.collection-card .collection-card-details {
+  margin-top: 16px;
+}
+
+.collection-card .collection-card-details p {
+  margin-top: 4px;
+  font-size: 14px;
+  opacity: 0.7;
 }
