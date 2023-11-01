@@ -109,13 +109,13 @@
 }
 
 .categories-cards {
-  display: flex;
   padding: 16px 0;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 24px;
 }
 
 .categories-card {
-  width: 200px;
   position: relative;
   z-index: 1;
 }
@@ -152,14 +152,15 @@
 }
 
 .collection-cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 24px;  
+  grid-row-gap:24px;
   margin-top: 32px;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .collection-card {
-  width: 384px;
+  
 }
 
 .collection-card img {
